@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --colorBlue: #70bee8;
+  --colorP: #999999;
+  --MainFont: Montserrat, sans-serif;
+  --SecondFont: "Open Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--MainFont);
+}
+
+/* start heroSection */
+.heroSection {
+  background-image: url("../Images/image.png");
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.heroSection a {
+  color: var(--colorBlue);
+  text-decoration: none;
+  font-weight: 600;
+}
+.heroSection button {
+  background-color: var(--colorBlue);
+  border: 1px solid var(--colorBlue);
+  color: white;
+  font-weight: 700;
+}
+.heroSection h3 {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+.heroSection p {
+  font-family: var(--SecondFont);
+}
+/* end heroSection */
+
+/* start modernApproach */
+.modernApproach button {
+  background-color: var(--colorBlue);
+  border: var(--colorBlue) 1px solid;
+  color: white;
+  font-weight: 600;
+}
+.modernApproach h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.modernApproach p {
+  font-family: var(--SecondFont);
+}
+/* end modernApproach */
+
+/* start mainMenu */
+.mainMenu main h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.mainMenu main h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.mainMenu .row section p {
+  font-family: var(--SecondFont);
+}
+.mainMenu .row section a {
+  font-family: var(--SecondFont);
+  text-decoration: none;
+  color: var(--colorBlue);
+  font-weight: 700;
+}
+/* end mainMenu */
+
+/* start kindFood */
+.kindFood main {
+  width: calc(85% / 3);
+  background-position: center;
+  background-size: cover;
+  height: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.kindFood main main {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  height: 70%;
+  border: 5px solid white;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.kindFood main main p {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.kindFood main main div {
+  width: 25%;
+  height: 25%;
+  background-color: var(--colorBlue);
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+/* end kindFood */
+
+/* start ourGallery */
+.ourGallery .row section {
+  justify-content: center;
+}
+.ourGallery .row div {
+  width: calc(93% / 3);
+  overflow: hidden;
+}
+.ourGallery img {
+  height: 310px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.ourGallery img:hover {
+  transform: scale(1.1);
+  filter: brightness(0.5);
+}
+.ourGallery a {
+  text-decoration: none;
+  color: var(--colorBlue);
+  font-weight: 700;
+}
+.ourGallery h4 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.ourGallery button {
+  background-color: var(--colorBlue);
+  color: white;
+  border: 1px solid var(--colorBlue);
+  font-weight: 700;
+}
+/* end ourGallery */
+
+/* start bookaTable */
+.bookaTable form .btn {
+  background-color: var(--colorBlue);
+  border: 1px solid var(--colorBlue);
+  color: white;
+  font-weight: 700;
+}
+.bookaTable a {
+  text-decoration: none;
+  color: var(--colorBlue);
+  font-weight: 700;
+}
+form input,
+textarea {
+  background-color: #f2f2f2;
+  border: #f2f2f2 1px solid;
+  padding: 0.6rem 0.8rem;
+}
+form input:focus,
+textarea:focus {
+  border: #f2f2f2 1px solid;
+  outline: none;
+}
+form div {
+  gap: 0.3rem;
+}
+form section div {
+  width: calc(97% / 2);
+}
+/* end bookaTable */
+
+/* start footer */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+footer a {
+  color: var(--colorBlue);
+}
+/* end footer */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heroSection h3 {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  .ourGallery .row div {
+    width: calc(93% / 2);
+  }
+  .kindFood main {
+    width: calc(85% / 2);
+  }
+  .kindFood .row section {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heroSection h3 {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+  .ourGallery .row div {
+    width: calc(98% / 1);
+  }
+  .bookaTable .container {
+    width: 90% !important;
+  }
+  .kindFood main {
+    width: calc(85% / 1);
+  }
+  .kindFood .row section {
+    flex-wrap: wrap;
+  }
+}

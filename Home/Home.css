@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --colorBlue: #70bee8;
+  --colorP: #999999;
+  --MainFont: Montserrat, sans-serif;
+  --SecondFont: "Open Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--MainFont);
+}
+
+/* start herosection */
+.hero-section {
+  background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/ef3dd04983bb54048838793b/cooked-fish-with-sauce-tomatoes-white-platecopy.jpg");
+  min-height: 115vh;
+  max-width: 100%;
+  background-size: cover;
+}
+.hero-section .container {
+  min-height: 100vh;
+}
+.hero-section h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+.hero-section h3 {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.hero-section .main-p {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.hero-section .details-p {
+  color: var(--colorP);
+  font-family: var(--SecondFont);
+}
+.hero-section a {
+  color: var(--colorBlue);
+}
+/* end herosection */
+
+/* start section-details */
+.section-details img {
+  object-fit: cover;
+}
+.section-details h2 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.section-details button {
+  background-color: var(--colorBlue);
+  color: white;
+  font-weight: 700;
+}
+.section-details p {
+  font-family: var(--SecondFont);
+  color: var(--colorP);
+}
+/* end section-details */
+
+/* start Book-you-table */
+.Book-you-table {
+  background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/b631ed2b132d55418ead52a5/cooked-fish-with-sa6uce-tomatoes-white-plate.jpg");
+  min-height: 115vh;
+  max-width: 100%;
+  background-size: cover;
+}
+.Book-you-table .container {
+  min-height: 100vh;
+}
+.Book-you-table main {
+  min-height: 75vh;
+  border-radius: 3.5rem;
+  background-color: #f2f2f2;
+  width: 45%;
+}
+.Book-you-table input,
+.Book-you-table textarea {
+  border-radius: 2rem;
+  border: solid 1px white;
+  padding: 1rem 1rem;
+}
+.Book-you-table input:focus,
+.Book-you-table textarea:focus {
+  border: 1px solid var(--colorBlue);
+  outline: none;
+}
+.Book-you-table .button {
+  background-color: var(--colorBlue);
+  color: white;
+  font-weight: 700;
+  border: solid 1px var(--colorBlue);
+}
+/* end Book-you-table */
+
+/* start Our-Menu  */
+.Our-Menu span {
+  height: 2px;
+  background-color: #454545;
+}
+.Our-Menu h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+.Our-Menu p {
+  margin: 0;
+}
+/* end Our-Menu  */
+
+/* start container-images */
+.container-images main div {
+  width: calc(94% / 3);
+}
+.container-images h5 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.container-images button {
+  background-color: var(--colorBlue);
+  border: 1px solid var(--colorBlue);
+  color: white;
+}
+.container-images main div img {
+  object-fit: cover;
+}
+/* end container-images */
+
+/* start lunch */
+.lunch h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+.lunch p {
+  margin: 0;
+}
+.lunch button {
+  background-color: var(--colorBlue);
+  color: white;
+}
+/* end lunch */
+
+
+/* start seaFood */
+.seaFood main h5{
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.seaFood main h4{
+  font-weight: 700;
+}
+.seaFood main p{
+  font-size: 17.5px;
+}
+.seaFood button{
+  background-color: var(--colorBlue);
+  border: 1px solid var(--colorBlue);
+  color: white;
+}
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+/* end seaFood */
+
+
+/* start lastSection  */
+.lastSection {
+  background-image: url("https://images01.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/e44cdd62720c52c39ed17da6/cooked-fish-with-sauce-tomatoes-white-platecopy.jpg");
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+}
+.lastSection main .card {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.lastSection h5{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.lastSection h6{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.lastSection p{
+  font-size: 18px;
+}
+.lastSection a{
+  text-decoration: none;
+  color: var(--colorBlue);
+}
+/* end lastSection  */
+
+
+/* start footer */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+footer a{
+  color: var(--colorBlue);
+}
+/* end footer */
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .Book-you-table main {
+    width: 70%;
+  }
+  .Book-you-table .row {
+    justify-content: center !important;
+  }
+  .Book-you-table {
+    justify-content: center;
+  }
+  .hero-section h1 {
+    font-size: 4rem;
+  }
+  .Our-Menu main {
+    flex-direction: column;
+  }
+  .lunch .row main{
+    flex-direction: column;
+  }
+  .lastSection main{
+    justify-content: center;
+  }
+  .lastSection p{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 769px) {
+  .section-details main {
+    flex-wrap: wrap;
+  }
+  .Book-you-table main {
+    width: 90%;
+  }
+  .Book-you-table .row {
+    justify-content: center !important;
+  }
+  .Book-you-table {
+    justify-content: center;
+  }
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  .Our-Menu main {
+    flex-direction: column;
+  }
+  .container-images main div {
+    width: calc(98% / 1);
+    gap: 1rem !important;
+  }
+  .container-images main div img {
+    height: 400px;
+  }
+  .container-images main {
+    flex-direction: column;
+  }
+  .lunch .row main{
+    flex-direction: column;
+  }
+  .lastSection main{
+    justify-content: center;
+  }
+  .lastSection p{
+    text-align: center;
+  }
+}
